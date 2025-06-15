@@ -1,0 +1,14 @@
+res://scenes/Bucket.tscn
+res://scenes/Creature1.tscn
+res://scenes/Creature2.tscn
+res://scenes/Creature3.tscn
+res://scenes/Creature4.tscn
+res://scenes/Creature5.tscn
+res://scenes/Creature6.tscn
+res://scenes/Creature7.tscn
+res://scenes/Creature8.tscn
+res://scenes/GameOverPopup.tscn
+res://scenes/Main.tscn
+res://scenes/MainMenu.tscn
+res://scenes/VolumeControls.tscn
+res://scripts/AudioManager.gd

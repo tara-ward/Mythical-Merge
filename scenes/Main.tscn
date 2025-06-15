@@ -1,0 +1,62 @@
+[gd_scene load_steps=6 format=3 uid="uid://b6x8v0j6y5n3q"]
+
+[ext_resource type="Script" uid="uid://5jdj0lbymm3b" path="res://scripts/Main.gd" id="1_2u4vw"]
+[ext_resource type="PackedScene" uid="uid://5one7td8iaj1" path="res://scenes/Bucket.tscn" id="2_bucket"]
+[ext_resource type="Texture2D" uid="uid://crpcki1jxlmpi" path="res://assets/MythicalMerge.png" id="3_0bbpv"]
+[ext_resource type="PackedScene" uid="uid://d0qcfce5e8yt2" path="res://scenes/GameOverPopup.tscn" id="4_popup"]
+[ext_resource type="PackedScene" uid="uid://bskyx0xpxygbl" path="res://scenes/VolumeControls.tscn" id="5_volume"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_2u4vw")
+
+[node name="Bucket" parent="." instance=ExtResource("2_bucket")]
+
+[node name="TextureRect" type="TextureRect" parent="Bucket"]
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 1154.0
+offset_bottom = 650.0
+texture = ExtResource("3_0bbpv")
+
+[node name="CreatureContainer" type="Node2D" parent="."]
+
+[node name="SpawnTimer" type="Timer" parent="."]
+
+[node name="SpawnCooldownTimer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="GameOverLine" type="Line2D" parent="CanvasLayer"]
+visible = false
+points = PackedVector2Array(0, 100, 1152, 100)
+width = 2.0
+default_color = Color(0, 0.567527, 0.852477, 1)
+
+[node name="ScoreLabel" type="Label" parent="CanvasLayer"]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 200.0
+offset_bottom = 46.0
+text = "Score: 0"
+
+[node name="HighScoreLabel" type="Label" parent="CanvasLayer"]
+offset_left = 20.0
+offset_top = 50.0
+offset_right = 200.0
+offset_bottom = 76.0
+text = "Best: 0"
+
+[node name="GameOverPopup" parent="CanvasLayer" instance=ExtResource("4_popup")]
+visible = false
+
+[node name="NextCreaturePreview" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(576, 50)
+scale = Vector2(0.2, 0.2)
+
+[node name="VolumeControls" parent="CanvasLayer" instance=ExtResource("5_volume")]
+offset_left = 942.0
+offset_top = 74.0
+offset_right = 1122.0
+offset_bottom = 248.0

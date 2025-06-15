@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://5one7td8iaj1"]
+
+[ext_resource type="PhysicsMaterial" uid="uid://cqa4erbft5bqv" path="res://assets/creature_physics.tres" id="1_0o00n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1"]
+size = Vector2(20, 1200)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2"]
+size = Vector2(20, 1200)
+
+[node name="Bucket" type="Node2D"]
+
+[node name="LeftWall" type="StaticBody2D" parent="."]
+position = Vector2(290, 300)
+physics_material_override = ExtResource("1_0o00n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall"]
+shape = SubResource("RectangleShape2D_1")
+
+[node name="RightWall" type="StaticBody2D" parent="."]
+position = Vector2(862, 300)
+physics_material_override = ExtResource("1_0o00n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightWall"]
+shape = SubResource("RectangleShape2D_2")
+
+[node name="Bottom" type="StaticBody2D" parent="."]
+position = Vector2(576, 600)
+physics_material_override = ExtResource("1_0o00n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bottom"]
+shape = SubResource("RectangleShape2D_1")
+rotation = 1.5708

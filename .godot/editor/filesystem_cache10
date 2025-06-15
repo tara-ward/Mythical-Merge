@@ -1,0 +1,53 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1749956261
+export_presets.cfg::TextFile/TextFile::-1::1749956109::0::1::::<><><>0<>0<><>::
+icon.svg::CompressedTexture2D/CompressedTexture2D::7520729635468650414::1749955368::1749955377::1::::<><><>0<>0<>e602fc60a1156270b0836890d7c332fa<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+Mythical Merge.144x144.png::CompressedTexture2D::1681506899420575129::1749956108::1749956267::1::::<><><>0<>0<>17752d344443c5529f5c32ed4659f18f<>res://.godot/imported/Mythical Merge.144x144.png-4e24bd6aa68e835442032d8c19671792.ctex::
+Mythical Merge.180x180.png::CompressedTexture2D::3774913896024045139::1749956108::1749956267::1::::<><><>0<>0<>0bc8611c47b368f9ac8839b26b661d28<>res://.godot/imported/Mythical Merge.180x180.png-cbdfd189e0d11b6a8a470c98a6ca1e44.ctex::
+Mythical Merge.512x512.png::CompressedTexture2D::3666614270272222368::1749956108::1749956267::1::::<><><>0<>0<>1f9abc89524a05c87ea856572470d27a<>res://.godot/imported/Mythical Merge.512x512.png-5d060a972610758736e14aa5de09b087.ctex::
+Mythical Merge.apple-touch-icon.png::CompressedTexture2D::1897906883984221475::1749956108::1749956267::1::::<><><>0<>0<>32c5e98f7382d6056d41d2b10aba2603<>res://.godot/imported/Mythical Merge.apple-touch-icon.png-6a93432e75706c54acf37efdf137fb8b.ctex::
+Mythical Merge.icon.png::CompressedTexture2D::2717560349776410215::1749956108::1749956267::1::::<><><>0<>0<>2019e54b95d1fc5eccd0bd161f2dcdf1<>res://.godot/imported/Mythical Merge.icon.png-617ff1809c2e9225294bc9d34004df1f.ctex::
+Mythical Merge.manifest.json::JSON::-1::1749956108::0::1::::<><><>0<>0<><>::
+Mythical Merge.png::CompressedTexture2D::1980607100940802745::1749956108::1749956267::1::::<><><>0<>0<>71d53fef916ea24692a684350be4afd8<>res://.godot/imported/Mythical Merge.png-5f8e2bf4445abb711b1c671576b3b269.ctex::
+README.md::TextFile/TextFile::-1::1749955764::0::1::::<><><>0<>0<><>::
+vercel.json::JSON/JSON::-1::1749941213::0::1::::<><><>0<>0<><>::
+::res://assets/::1749954389
+BackgroundMusic.mp3::AudioStreamMP3/AudioStreamMP3::3920760541780942143::1749954358::1749954389::1::::<><><>0<>0<>86ee832d29e719e2cf3420f72867cb41<>res://.godot/imported/BackgroundMusic.mp3-746e397bccaff5f6e4554f9cf58ee8bf.mp3str::
+color-orchid-pointer.png::CompressedTexture2D/CompressedTexture2D::2026694194969928820::1749953250::1749953262::1::::<><><>0<>0<>4c845c181ced3d61a5a192ae7b046eda<>res://.godot/imported/color-orchid-pointer.png-72ce92ab0a081bf2e0a559716f1c8e53.ctex::
+Creature1.png::CompressedTexture2D/CompressedTexture2D::4718415027321989306::1749940812::1749941397::1::::<><><>0<>0<>465baee6b7788f6d8ac6b0079902aa7b<>res://.godot/imported/Creature1.png-739f47989664fc34b560296b7934277e.ctex::
+Creature2.png::CompressedTexture2D/CompressedTexture2D::7789185866199821619::1749940812::1749941397::1::::<><><>0<>0<>f7a69295dac2740a9dcb6067d8adc3b7<>res://.godot/imported/Creature2.png-6e61bd82ab5c862066d0f04429ada55f.ctex::
+Creature3.png::CompressedTexture2D/CompressedTexture2D::4041028872187731468::1749940812::1749941397::1::::<><><>0<>0<>bee50c09c7355c918c38aef72d998028<>res://.godot/imported/Creature3.png-5d74fd4cc219ea4163dd2c346878291a.ctex::
+Creature4.png::CompressedTexture2D/CompressedTexture2D::6658964442484900090::1749940812::1749941397::1::::<><><>0<>0<>d73f5b2286c03511fc1e2f26b407601f<>res://.godot/imported/Creature4.png-052012bc55302f6d8162fc514f051b6a.ctex::
+Creature5.png::CompressedTexture2D/CompressedTexture2D::4615371912697223077::1749940812::1749941397::1::::<><><>0<>0<>c23544c587f117c48fed3538bd0e6678<>res://.godot/imported/Creature5.png-2753b9cfba8294019f752d4c25a34198.ctex::
+Creature6.png::CompressedTexture2D/CompressedTexture2D::5375823489629000024::1749940812::1749941397::1::::<><><>0<>0<>264069f04b05632228368abde4716b02<>res://.godot/imported/Creature6.png-49e0bad63f954b9bf1a054a6c44a24dd.ctex::
+Creature7.png::CompressedTexture2D/CompressedTexture2D::5208960609004762640::1749940812::1749941397::1::::<><><>0<>0<>4b36150f685f767db91271ad3d892576<>res://.godot/imported/Creature7.png-61baf2860a5a48bdca1e1e0e73206e1c.ctex::
+Creature8.png::CompressedTexture2D/CompressedTexture2D::3468469233058978363::1749940812::1749941397::1::::<><><>0<>0<>3603530868e07ed0efd33b143a3d539f<>res://.godot/imported/Creature8.png-805925e19da8e6650ef2555b7efc273e.ctex::
+creature_physics.tres::PhysicsMaterial/PhysicsMaterial::5897631696256072505::1749946278::0::1::::<><><>0<>0<><>::
+Drop.mp3::AudioStreamMP3/AudioStreamMP3::7638229393084620526::1749953760::1749953862::1::::<><><>0<>0<>a3d15ed8f1f057a940658151fa268805<>res://.godot/imported/Drop.mp3-c303b86520897cbd3a60f73e1ce8b1ea.mp3str::
+MainMenu.png::CompressedTexture2D/CompressedTexture2D::4924248664439440908::1749951866::1749951884::1::::<><><>0<>0<>d3bf2e2cc08fc4db39a900139d25959f<>res://.godot/imported/MainMenu.png-9d18dc20d17fb9a913754d0c3e730ce3.ctex::
+Merge.wav::AudioStreamWAV/AudioStreamWAV::1801907531627622307::1749954251::1749954389::1::::<><><>0<>0<>a742c901c8d03f087e870f52d342023e<>res://.godot/imported/Merge.wav-152803cf744411beeaf554b7791436b2.sample::
+MythicalMerge.png::CompressedTexture2D/CompressedTexture2D::5997157128260048414::1749951813::1749951884::1::::<><><>0<>0<>d36f0b5abad28c72fffb1284cfddf45c<>res://.godot/imported/MythicalMerge.png-7d6db5f426be5a914278114822d0652d.ctex::
+pop.mp3::AudioStreamMP3/AudioStreamMP3::2981780993833561221::1749953558::1749953862::1::::<><><>0<>0<>c3b5afd516c1ff42ba9bb6bb6ad3dbb6<>res://.godot/imported/pop.mp3-ab2a9ddf1938e40e33825453c8e66c1a.mp3str::
+::res://scenes/::1749956044
+Bucket.tscn::PackedScene::2135364772058600636::1749956041::0::1::::<><><>0<>0<><>::uid://cqa4erbft5bqv::::res://assets/creature_physics.tres
+Creature1.tscn::PackedScene::7124029894212282072::1749956041::0::1::::<><><>0<>0<><>::uid://dorwk4daovvop::::res://scripts/Creature.gd<>uid://cqa4erbft5bqv::::res://assets/creature_physics.tres<>uid://b8hvuuxmt2w2e::::res://assets/Creature1.png
+Creature2.tscn::PackedScene::7124029894212282072::1749956041::0::1::::<><><>0<>0<><>::uid://dorwk4daovvop::::res://scripts/Creature.gd<>uid://cqa4erbft5bqv::::res://assets/creature_physics.tres<>uid://di8e0ux3738xb::::res://assets/Creature2.png
+Creature3.tscn::PackedScene::7124029894212282072::1749956041::0::1::::<><><>0<>0<><>::uid://dorwk4daovvop::::res://scripts/Creature.gd<>uid://cqa4erbft5bqv::::res://assets/creature_physics.tres<>uid://bxtrfjk70q0ii::::res://assets/Creature3.png
+Creature4.tscn::PackedScene::7124029894212282072::1749956041::0::1::::<><><>0<>0<><>::uid://dorwk4daovvop::::res://scripts/Creature.gd<>uid://cqa4erbft5bqv::::res://assets/creature_physics.tres<>uid://c14wf3h5a6rb3::::res://assets/Creature4.png
+Creature5.tscn::PackedScene::7124029894212282072::1749956041::0::1::::<><><>0<>0<><>::uid://dorwk4daovvop::::res://scripts/Creature.gd<>uid://cqa4erbft5bqv::::res://assets/creature_physics.tres<>uid://b60yrbi0y3bqb::::res://assets/Creature5.png
+Creature6.tscn::PackedScene::7124029894212282072::1749956041::0::1::::<><><>0<>0<><>::uid://dorwk4daovvop::::res://scripts/Creature.gd<>uid://cqa4erbft5bqv::::res://assets/creature_physics.tres<>uid://ciuda60ff6bue::::res://assets/Creature6.png
+Creature7.tscn::PackedScene::7124029894212282072::1749956041::0::1::::<><><>0<>0<><>::uid://dorwk4daovvop::::res://scripts/Creature.gd<>uid://cqa4erbft5bqv::::res://assets/creature_physics.tres<>uid://cghi25e2u48wy::::res://assets/Creature7.png
+Creature8.tscn::PackedScene::7124029894212282072::1749956041::0::1::::<><><>0<>0<><>::uid://dorwk4daovvop::::res://scripts/Creature.gd<>uid://cqa4erbft5bqv::::res://assets/creature_physics.tres<>uid://bpofgf3oc62lb::::res://assets/Creature8.png
+GameOverPopup.tscn::PackedScene::8947143661645778057::1749956044::0::1::::<><><>0<>0<><>::uid://c88btmrp2qidm::::res://scripts/GameOverPopup.gd
+Main.tscn::PackedScene::4611798015677534604::1749956044::0::1::::<><><>0<>0<><>::uid://5jdj0lbymm3b::::res://scripts/Main.gd<>uid://5one7td8iaj1::::res://scenes/Bucket.tscn<>uid://crpcki1jxlmpi::::res://assets/MythicalMerge.png<>uid://d0qcfce5e8yt2::::res://scenes/GameOverPopup.tscn<>uid://bskyx0xpxygbl::::res://scenes/VolumeControls.tscn
+MainMenu.tscn::PackedScene::6871435390733436807::1749956044::0::1::::<><><>0<>0<><>::uid://calei2phx5hdm::::res://scripts/MainMenu.gd<>uid://ccflwkn3yh8ia::::res://assets/MainMenu.png
+VolumeControls.tscn::PackedScene::3671963277131962005::1749956041::0::1::::<><><>0<>0<><>::uid://dgpksqyxa6jox::::res://scripts/VolumeControls.gd
+::res://scripts/::1749954833
+AudioManager.gd::GDScript/GDScript::6612230910047720351::1749954803::0::1::::<>Node<><>0<>0<><>::
+Creature.gd::GDScript/GDScript::8178355443441810183::1749954580::0::1::::<>RigidBody2D<><>0<>0<><>::
+CreatureDefs.gd::GDScript/GDScript::6207314109416742138::1749946774::0::1::::<>Node<><>0<>0<><>::
+GameOverPopup.gd::GDScript/GDScript::7157292977662330338::1749953454::0::1::::<>Control<><>0<>0<><>::
+Main.gd::GDScript/GDScript::2124444262205549097::1749955184::0::1::::<>Node2D<><>0<>0<><>::
+MainMenu.gd::GDScript/GDScript::4795808118655655822::1749953113::0::1::::<>Control<><>0<>0<><>::
+Score.gd::GDScript/GDScript::8754945097419615595::1749941743::0::1::::<>Node<><>0<>0<><>::
+VolumeControls.gd::GDScript/GDScript::7612000971931499247::1749954936::0::1::::<>Control<><>0<>0<><>::
