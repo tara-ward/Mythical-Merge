@@ -16,7 +16,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 
 def run_server():
     # Open the game in the default browser
-    webbrowser.open(f'http://localhost:{PORT}/MythicalMerge.html')
+    webbrowser.open(f'http://localhost:{PORT}/index.html')
     
     with socketserver.TCPServer(("", PORT), Handler) as httpd:
         print(f"Serving at http://localhost:{PORT}")
