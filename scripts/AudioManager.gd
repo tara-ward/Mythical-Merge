@@ -54,6 +54,8 @@ func _ready():
 	if OS.get_name() == "Web":
 		print("AudioManager: Running in Web mode")
 		# Connect to input event to detect user interaction
+		get_tree().root.connect("input_event", Callable(self, "_on_user_interaction"))
+		# Also try connecting to gui_input as a backup
 		get_tree().root.connect("gui_input", Callable(self, "_on_user_interaction"))
 	else:
 		print("AudioManager: Running in native mode")
@@ -65,29 +67,38 @@ func _on_user_interaction(_event):
 		audio_initialized = true
 		start_audio()
 		# Disconnect after first interaction
-		get_tree().root.disconnect("gui_input", Callable(self, "_on_user_interaction"))
+		if get_tree().root.is_connected("input_event", Callable(self, "_on_user_interaction")):
+			get_tree().root.disconnect("input_event", Callable(self, "_on_user_interaction"))
+		if get_tree().root.is_connected("gui_input", Callable(self, "_on_user_interaction")):
+			get_tree().root.disconnect("gui_input", Callable(self, "_on_user_interaction"))
 
 func start_audio():
 	print("AudioManager: Starting audio")
-	music_player.play()
-	music_player.finished.connect(_on_music_finished)
+	if music_player.stream != null:
+		music_player.play()
+		music_player.finished.connect(_on_music_finished)
+	else:
+		print("AudioManager: Error - music stream is null")
 
 func _on_music_finished():
 	print("AudioManager: Music finished, restarting")
-	music_player.play()  # Loop the music
+	if music_player.stream != null:
+		music_player.play()  # Loop the music
+	else:
+		print("AudioManager: Error - music stream is null")
 
 func play_drop():
-	if not is_muted and audio_initialized:
+	if not is_muted and audio_initialized and drop_player.stream != null:
 		print("AudioManager: Playing drop sound")
 		drop_player.play()
 
 func play_pop():
-	if not is_muted and audio_initialized:
+	if not is_muted and audio_initialized and pop_player.stream != null:
 		print("AudioManager: Playing pop sound")
 		pop_player.play()
 
 func play_merge():
-	if not is_muted and audio_initialized:
+	if not is_muted and audio_initialized and merge_player.stream != null:
 		print("AudioManager: Playing merge sound")
 		merge_player.play()
 
