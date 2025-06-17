@@ -4,14 +4,14 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1749963741|7724626817';
+const CACHE_VERSION = '1750136767|518839623';
 /** @type {string} */
 const CACHE_PREFIX = 'Mythical Merge-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
 /** @type {string} */
 const OFFLINE_URL = 'game.offline.html';
 /** @type {boolean} */
-const ENSURE_CROSSORIGIN_ISOLATION_HEADERS = false;
+const ENSURE_CROSSORIGIN_ISOLATION_HEADERS = true;
 // Files that will be cached on load.
 /** @type {string[]} */
 const CACHED_FILES = ["game.html","game.js","game.offline.html","game.icon.png","game.apple-touch-icon.png","game.audio.worklet.js","game.audio.position.worklet.js"];

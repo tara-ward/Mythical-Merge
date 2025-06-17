@@ -14,6 +14,11 @@ var audio_initialized: bool = false
 
 func _ready():
 	print("AudioManager: _ready called")
+	initialize_audio()
+
+func initialize_audio():
+	print("AudioManager: Initializing audio...")
+	
 	# Create audio players
 	drop_player = AudioStreamPlayer.new()
 	pop_player = AudioStreamPlayer.new()
@@ -28,19 +33,21 @@ func _ready():
 	
 	# Load audio streams
 	print("AudioManager: Loading audio streams...")
-	var drop_stream = load("res://assets/Drop.mp3")
-	var pop_stream = load("res://assets/pop.mp3")
-	var merge_stream = load("res://assets/Merge.wav")
-	var music_stream = load("res://assets/BackgroundMusic.mp3")
+	var drop_stream = load("res://assets/Drop.ogg")
+	var pop_stream = load("res://assets/pop.ogg")
+	var merge_stream = load("res://assets/Merge.ogg")
+	var music_stream = load("res://assets/BackgroundMusic.ogg")
 	
-	if drop_stream == null:
-		print("AudioManager: Failed to load Drop.mp3")
-	if pop_stream == null:
-		print("AudioManager: Failed to load pop.mp3")
-	if merge_stream == null:
-		print("AudioManager: Failed to load Merge.wav")
-	if music_stream == null:
-		print("AudioManager: Failed to load BackgroundMusic.mp3")
+	# Debug stream loading
+	print("AudioManager: Stream loading results:")
+	print("- Drop.ogg: ", "Loaded" if drop_stream != null else "Failed")
+	print("- pop.ogg: ", "Loaded" if pop_stream != null else "Failed")
+	print("- Merge.ogg: ", "Loaded" if merge_stream != null else "Failed")
+	print("- BackgroundMusic.ogg: ", "Loaded" if music_stream != null else "Failed")
+	
+	if drop_stream == null or pop_stream == null or merge_stream == null or music_stream == null:
+		push_error("AudioManager: Failed to load one or more audio streams")
+		return
 	
 	drop_player.stream = drop_stream
 	pop_player.stream = pop_stream
@@ -49,43 +56,25 @@ func _ready():
 	
 	# Configure music player
 	update_volumes()
-	
-	# For web builds, we'll start music after user interaction
-	if OS.get_name() == "Web":
-		print("AudioManager: Running in Web mode")
-		# Connect to input event to detect user interaction
-		get_tree().root.connect("input_event", Callable(self, "_on_user_interaction"))
-		# Also try connecting to gui_input as a backup
-		get_tree().root.connect("gui_input", Callable(self, "_on_user_interaction"))
-	else:
-		print("AudioManager: Running in native mode")
-		start_audio()
-
-func _on_user_interaction(_event):
-	print("AudioManager: User interaction detected")
-	if not audio_initialized:
-		audio_initialized = true
-		start_audio()
-		# Disconnect after first interaction
-		if get_tree().root.is_connected("input_event", Callable(self, "_on_user_interaction")):
-			get_tree().root.disconnect("input_event", Callable(self, "_on_user_interaction"))
-		if get_tree().root.is_connected("gui_input", Callable(self, "_on_user_interaction")):
-			get_tree().root.disconnect("gui_input", Callable(self, "_on_user_interaction"))
+	start_audio()
+	audio_initialized = true
 
 func start_audio():
 	print("AudioManager: Starting audio")
 	if music_player.stream != null:
 		music_player.play()
 		music_player.finished.connect(_on_music_finished)
+		print("AudioManager: Music started successfully")
 	else:
-		print("AudioManager: Error - music stream is null")
+		push_error("AudioManager: Error - music stream is null")
 
 func _on_music_finished():
 	print("AudioManager: Music finished, restarting")
 	if music_player.stream != null:
 		music_player.play()  # Loop the music
+		print("AudioManager: Music restarted successfully")
 	else:
-		print("AudioManager: Error - music stream is null")
+		push_error("AudioManager: Error - music stream is null")
 
 func play_drop():
 	if not is_muted and audio_initialized and drop_player.stream != null:
