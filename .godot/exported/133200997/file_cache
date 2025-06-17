@@ -8,7 +8,7 @@ res://scenes/Creature5.tscn::dab141ab3d223bc3870625d4459a4fd1::1749956041::res:/
 res://scenes/Creature6.tscn::64995ba50b724d2caa74acc95825e075::1749956041::res://.godot/exported/133200997/export-e51992a44fbb5d5d321ad41a3ab6b9cb-Creature6.scn
 res://scenes/Creature7.tscn::b9453bb582c4c45b6f0f086aaef4e9b7::1749956041::res://.godot/exported/133200997/export-63de0026783fdf9d36d9bf9876abe9d3-Creature7.scn
 res://scenes/Creature8.tscn::6d0cbc4a48de028544e6d5a5276182bf::1749956041::res://.godot/exported/133200997/export-17662699d5943e17912e2c2f7014cb2f-Creature8.scn
-res://scenes/GameOverPopup.tscn::26b5cf03a4144b3f03c53b627ddbf433::1750136520::res://.godot/exported/133200997/export-0627d08ae36e30c1c9a9bb2d999dc3a5-GameOverPopup.scn
-res://scenes/Main.tscn::ead47b3aebbace62a06deb6f5d3e46f5::1750136520::res://.godot/exported/133200997/export-4a24720ee5e787dbe30abc634fa3679d-Main.scn
-res://scenes/MainMenu.tscn::a260857d16d211d9a6deb5939204a4de::1750136520::res://.godot/exported/133200997/export-23c8b2a48d59a0cd018bd8ad5ce7794c-MainMenu.scn
-res://scenes/VolumeControls.tscn::53657f148737a8a9c115dde91416c8f4::1749956041::res://.godot/exported/133200997/export-9e5c95431b52f65e1f71da28b36bac76-VolumeControls.scn
+res://scenes/GameOverPopup.tscn::26b5cf03a4144b3f03c53b627ddbf433::1750137380::res://.godot/exported/133200997/export-0627d08ae36e30c1c9a9bb2d999dc3a5-GameOverPopup.scn
+res://scenes/Main.tscn::ead47b3aebbace62a06deb6f5d3e46f5::1750137379::res://.godot/exported/133200997/export-4a24720ee5e787dbe30abc634fa3679d-Main.scn
+res://scenes/MainMenu.tscn::0379d311566428387191d523ce34814f::1750137397::res://.godot/exported/133200997/export-23c8b2a48d59a0cd018bd8ad5ce7794c-MainMenu.scn
+res://scenes/VolumeControls.tscn::53657f148737a8a9c115dde91416c8f4::1750137354::res://.godot/exported/133200997/export-9e5c95431b52f65e1f71da28b36bac76-VolumeControls.scn

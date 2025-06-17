@@ -4,7 +4,7 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1750136767|518839623';
+const CACHE_VERSION = '1750137409|1160719631';
 /** @type {string} */
 const CACHE_PREFIX = 'Mythical Merge-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;

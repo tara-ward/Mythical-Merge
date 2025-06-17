@@ -2,3 +2,6 @@ res://scenes/Main.tscn
 res://scenes/MainMenu.tscn
 res://scenes/GameOverPopup.tscn
 res://scripts/AudioManager.gd
+res://scripts/MainMenu.gd
+res://scenes/VolumeControls.tscn
+res://scripts/VolumeControls.gd

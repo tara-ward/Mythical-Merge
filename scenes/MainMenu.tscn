@@ -48,10 +48,13 @@ text = "Start Game"
 layout_mode = 2
 text = "Game Rules"
 
+[node name="SettingsButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Settings"
+
 [node name="RulesPopup" type="PopupPanel" parent="."]
-position = Vector2i(991, 285)
+position = Vector2i(1166, 290)
 size = Vector2i(365, 182)
-visible = true
 
 [node name="VBoxContainer" type="VBoxContainer" parent="RulesPopup"]
 anchors_preset = 15
@@ -78,5 +81,61 @@ text = "1. Merge creatures to create new ones
 4. Don't let the board fill up!"
 
 [node name="CloseButton" type="Button" parent="RulesPopup/VBoxContainer"]
+layout_mode = 2
+text = "Close"
+
+[node name="SettingsPopup" type="PopupPanel" parent="."]
+position = Vector2i(1166, 290)
+size = Vector2i(365, 250)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SettingsPopup"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 361.0
+offset_bottom = 246.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+
+[node name="Title" type="Label" parent="SettingsPopup/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Settings"
+horizontal_alignment = 1
+
+[node name="MusicVolume" type="VBoxContainer" parent="SettingsPopup/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="SettingsPopup/VBoxContainer/MusicVolume"]
+layout_mode = 2
+text = "Music Volume"
+
+[node name="HSlider" type="HSlider" parent="SettingsPopup/VBoxContainer/MusicVolume"]
+layout_mode = 2
+max_value = 1.0
+step = 0.1
+value = 0.6
+
+[node name="SFXVolume" type="VBoxContainer" parent="SettingsPopup/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="SettingsPopup/VBoxContainer/SFXVolume"]
+layout_mode = 2
+text = "Sound Effects Volume"
+
+[node name="HSlider" type="HSlider" parent="SettingsPopup/VBoxContainer/SFXVolume"]
+layout_mode = 2
+max_value = 1.0
+step = 0.1
+value = 1.0
+
+[node name="MuteButton" type="Button" parent="SettingsPopup/VBoxContainer"]
+layout_mode = 2
+text = "Mute All"
+
+[node name="CloseButton" type="Button" parent="SettingsPopup/VBoxContainer"]
 layout_mode = 2
 text = "Close"
